@@ -1,33 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="manifest" href="./manifest.json">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
-    <title>Animated Slides</title>
-    <link rel="stylesheet" href="styles.css?v=z8x4m2">
+    <title>Animated Slides with Food Grid</title>
+    <link rel="stylesheet" href="styles.css?v=food77">
 </head>
 <body>
-    <div class="slideshow-container">
-        <div class="slide" id="slide1">
-            <h1>Hello World</h1>
+    <div class="app-container">
+        <!-- Sliding Text Section -->
+        <div class="slideshow-container">
+            <div class="slide" id="slide1">
+                <h1>Hello World</h1>
+            </div>
+            <div class="slide" id="slide2">
+                <h1>I'm here!</h1>
+            </div>
         </div>
-        <div class="slide" id="slide2">
-            <h1>I'm here!</h1>
+
+        <!-- Static Food Grid Section -->
+        <div class="food-grid" id="foodGrid">
+            <!-- Items will be populated by JavaScript -->
         </div>
     </div>
-    <script src="script.js?v=z8x4m2"></script>
-  <script>
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('load', function () {
-        navigator.serviceWorker.register('./sw.js')
-          .then(function (reg) { console.log('[PWA] SW registered:', reg.scope); })
-          .catch(function (err) { console.warn('[PWA] SW registration failed:', err); });
-      });
-    }
-  </script>
+    <script src="script.js?v=food77"></script>
 </body>
 </html>
